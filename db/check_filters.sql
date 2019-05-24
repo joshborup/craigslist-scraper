@@ -1,0 +1,1 @@
+select users.user_id,  filter, category from users join filters on (users.user_id = filters.user_id) where users.user_id = $1;

@@ -1,0 +1,1 @@
+select * from items where date = $1;

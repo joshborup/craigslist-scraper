@@ -1,0 +1,1 @@
+insert into filters (filter, user_id) value ($1, $2);

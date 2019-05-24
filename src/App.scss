@@ -1,0 +1,41 @@
+.App {
+  .item-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .card {
+      position: relative;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+
+      .item-meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span:last-child:not(.item-name) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 24px;
+          padding: 5px;
+          background: white;
+          border-radius: 3px;
+          color: rgb(24, 206, 0);
+          border: solid black 2px;
+          box-shadow: inset 1px 1px 5px black;
+        }
+      }
+    }
+  }
+}
